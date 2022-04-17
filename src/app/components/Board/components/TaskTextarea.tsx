@@ -4,7 +4,6 @@ interface ContainerProps{
     children: React.ReactNode
 }
 
-//flex flex-col border-2 border-solid border-[#282c34] m-h-16
 const Container = ({children}: ContainerProps) => (
     <div className='rounded-md border-solid border-[1px] border-[#e7eaea]
                   bg-white text-sm font-bold leading-snug tracking-normal
@@ -43,5 +42,4 @@ export const TaskTextarea = (props : TaskTextareaProps)=>{
                 />
         </Container>
     )
-    //m-5 border-1 border-solid border-[#b8b8b8]
 }   

@@ -10,7 +10,6 @@ interface ContainerProps{
     children: React.ReactNode
 }
 
-//flex flex-col bg-white w-48 max-w-96 h-full
 const Container = ({children}: ContainerProps) => (
     <div className='rounded-lg bg-white dark:bg-[#282828] py-6 px-5 my-2 mx-3 s:mx-3 sm:mx-5 xl:mx-1 2xl:mx-1 w-[100vw]  s:w-[41vw] sm:w-[40vw] md:w-[28vw] lg:w-[21vw] xl:w-[18vw] 2xl:w-[15vw] lg:min-w-64 lg:max-w-96 h-fit'>
         {children}

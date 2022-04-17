@@ -9,7 +9,7 @@ import { addNewColumn, BoardColumn } from '../../store/board.slice';
 interface ContainerProps{
     children: React.ReactNode
 }
-// bg-[#282c34] flex flex-row BoardHeight p-3
+
 const Container = ({children}: ContainerProps) => (
     <div className='flex bg-[#A9A9A9] dark:bg-[#121212] w-full h-full min-h-[calc(100vh-6rem)] py-10 px-5'>
         {children}
