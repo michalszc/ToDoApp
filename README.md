@@ -11,3 +11,4 @@ Simple todo app built with the React Framework.
 - Container for tasks to group them.
 - Containers have individual tasks color.
 - Task can be edited, deleted or marked as done.
+- Everything is stored in LocalStorage.
