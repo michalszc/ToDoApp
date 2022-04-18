@@ -30,6 +30,7 @@ const Content = ({isDone, content, onMarkTask, onEditTask, onDeleteTask}: Conten
     const [text, setText] = useState(content);
     useOutsideAlerter(wrapperRef, () => {
       if (wrapperRef.current) {
+        firsRender.current = true;
         onEditTask(wrapperRef.current.value || wrapperRef.current.placeholder);
         setShowInput(false);
       }
@@ -39,6 +40,7 @@ const Content = ({isDone, content, onMarkTask, onEditTask, onDeleteTask}: Conten
         if (event.key === 'Enter') {
           event.preventDefault();
           if (text.length > 0) {
+            firsRender.current = true;
             onEditTask(text);
             setShowInput(false);
           }
